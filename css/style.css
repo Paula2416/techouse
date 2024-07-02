@@ -2,10 +2,23 @@
     margin: 0%;
     top: 0%;
     border: none;
+    padding: 0%;
 }
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     background-color: #000000;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #000030;
+}
+h1 , h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+
 }
