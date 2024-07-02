@@ -93,3 +93,25 @@ header {
                 text-align: center;
             }
         }
+     /* hero style*/   
+        .hero {
+    height: 600px;
+    width: 100%;
+    background: url('../images/hero.jpg') no repeat center center ;
+    animation-name:hero-zoom;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+#hero image {
+    height: 600px;
+    width: 100%;
+   overflow: hidden;
+}
+/* animation for the hero*/
+@keyframes hero-zoom {
+    from {
+        transform:scale(1);
+}
+    to{      transform:scale(1.1);}
+    
+}
