@@ -152,6 +152,48 @@ header {
 .right h4 {
     clear: both;
 }
+#welcome {
+    text-align: center;
+    font-weight: bold;
+    text-size-adjust: 300px;
+}
+
+.pricing-plan {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+
+.plan-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.plan-cost {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.plan-cost span {
+    font-size: 14px;
+    color: #888;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+}
+	
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
