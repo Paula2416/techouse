@@ -4,6 +4,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #efeff7;
     color: #4418e0;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
@@ -71,28 +73,6 @@ header {
         .nav-list li a:hover {
             color: #ff6f61;
         }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-wrap: wrap;
-            }
-
-            .nav-list {
-                flex-direction: column;
-                width: 100%;
-                display: none;
-            }
-
-            .nav-list li {
-                margin-left: 0;
-            }
-
-            .nav-list li a {
-                padding: 10px;
-                text-align: center;
-            }
-        }
      /* hero style*/   
         .hero {
     height: 600px;
@@ -100,12 +80,13 @@ header {
     background: url('../images/hero.jpg') no repeat center center ;
     animation-name:hero-zoom;
     animation-duration: 10s;
-    animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
 }
 #hero image {
     height: 600px;
     width: 100%;
    overflow: hidden;
+   position: relative;
 }
 /* animation for the hero*/
 @keyframes hero-zoom {
@@ -114,4 +95,82 @@ header {
 }
     to{      transform:scale(1.1);}
     
+}
+
+/* Text overlay */
+.cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(13, 44, 218, 0.5);
+}
+
+.cover-text h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+    font-weight: bold;
+
+}
+
+.cover-text h3 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    font-weight: normal;
+}
+
+.cover-text p {
+    font-size: 1.2em;
+    margin: 0.5em 0;
+}
+.about us {
+    height: 600px;
+}
+.left{
+    padding-top: 30px;
+    width: 20%;
+    float: left;
+}
+.right {
+    padding-top: 30px;
+    width: 20%;
+    float: right;
+
+
+
+
+
+}
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cover-text h1 {
+        font-size: 2em;
+    }
+
+    .cover-text h3 {
+        font-size: 1.5em;
+    }
+
+    .cover-text p {
+        font-size: 1em;
+    }
+    nav {
+        flex-wrap: wrap;
+    }
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+    .nav-list li {
+        margin-left: 0;
+    }
+    .nav-list li a {
+        padding: 10px;
+        text-align: center;
+    }
 }
