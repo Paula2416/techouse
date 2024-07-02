@@ -133,6 +133,10 @@ header {
     width: 20%;
     float: left;
 }
+.left h4 {
+    clear: both;
+
+}
 .right {
     padding-top: 30px;
     width: 20%;
@@ -141,6 +145,12 @@ header {
 .center {
     width:20% ;
     margin: 0 auto;
+}
+.center h4 {
+    clear: both;
+}
+.right h4 {
+    clear: both;
 }
 
 /* Responsive Design */
