@@ -1,16 +1,18 @@
+/*css style */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #efeff7;
+    background-color: #f8f8fa;
     color: #4418e0;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 header {
-    background-color: #f6f9fa;
-    padding: 20px;
+    background-color: #9183ec;
+    padding: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +26,7 @@ header {
     display: flex;
     align-items: center;
     color: #1b0bf8;
-    font-size: 2em;
+    font-size: 4em;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
     transition: transform 0.3s ease;
@@ -38,7 +40,8 @@ header {
 
         /* Navigation bar styles */
         nav {
-            background-color: #fcfdfd;
+            font-size: 80px;
+            background-color:none;
             padding: 10px 50px;
             display: flex;
             justify-content: space-between;
@@ -46,7 +49,7 @@ header {
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 8px rgba(40, 8, 226, 0.925);
+            box-shadow: 0 4px 8px rgba(246, 250, 12, 0.925);
         }
 
         .nav-list {
@@ -71,22 +74,34 @@ header {
             overflow: hidden;
         }
         .nav-list li a:hover {
-            color: #ff6f61;
+            color: #e5f50c;
         }
      /* hero style*/   
-        .hero {
-    height: 600px;
-    width: 100%;
-    background: url('../images/hero.jpg') no repeat center center ;
+     .hero {
+    text-align: center;
     animation-name:hero-zoom;
-    animation-duration: 10s;
+    animation-duration: 5s;
     animation-fill-mode:forwards;
+    background-image: url(../images/main.jpg) ;
+    background-size: cover;
+    z-index: 1;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    
 }
-#hero image {
-    height: 600px;
-    width: 100%;
-   overflow: hidden;
-   position: relative;
+.hero h1 {
+    font-size: 300px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+.hero h3 {
+    font-size: 200px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    color: black;
 }
 /* animation for the hero*/
 @keyframes hero-zoom {
@@ -96,37 +111,41 @@ header {
     to{      transform:scale(1.1);}
     
 }
-
-/* Text overlay */
-.cover-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(13, 44, 218, 0.5);
+@keyframes imageZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
 }
 
-.cover-text h1 {
-    font-size: 3em;
+.hero p{
+    font-size: 30px;
     margin: 0.5em 0;
     font-weight: bold;
+    color:yellow;
 
-}
-
-.cover-text h3 {
-    font-size: 2em;
-    margin: 0.5em 0;
-    font-weight: normal;
-}
-
-.cover-text p {
-    font-size: 1.2em;
-    margin: 0.5em 0;
 }
 .about us {
     height: 600px;
+    font-size: 30px;
+}
+#welcome {
+    font-weight: bold;
+    color: #1b0bf8;
+    text-align: center;
+    font-size: 65px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+#brand {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+
 }
 .left{
     padding-top: 30px;
@@ -151,11 +170,6 @@ header {
 }
 .right h4 {
     clear: both;
-}
-#welcome {
-    text-align: center;
-    font-weight: bold;
-    text-size-adjust: 300px;
 }
 
 .pricing-plan {
@@ -249,32 +263,3 @@ footer p {
     color: #1b0bf8;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .cover-text h1 {
-        font-size: 2em;
-    }
-
-    .cover-text h3 {
-        font-size: 1.5em;
-    }
-
-    .cover-text p {
-        font-size: 1em;
-    }
-    nav {
-        flex-wrap: wrap;
-    }
-    .nav-list {
-        flex-direction: column;
-        width: 100%;
-        display: none;
-    }
-    .nav-list li {
-        margin-left: 0;
-    }
-    .nav-list li a {
-        padding: 10px;
-        text-align: center;
-    }
-}
