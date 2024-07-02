@@ -32,5 +32,64 @@ header {
         margin-left: 10px;
         font-weight: bold;
         font-size: 1em;
+ }
 
-}
+        /* Navigation bar styles */
+        nav {
+            background-color: #fcfdfd;
+            padding: 10px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(40, 8, 226, 0.925);
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-list li {
+            margin-left: 50px;
+            position: relative;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-list li a {
+            color: rgb(69, 26, 189);
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+        .nav-list li a:hover {
+            color: #ff6f61;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav {
+                flex-wrap: wrap;
+            }
+
+            .nav-list {
+                flex-direction: column;
+                width: 100%;
+                display: none;
+            }
+
+            .nav-list li {
+                margin-left: 0;
+            }
+
+            .nav-list li a {
+                padding: 10px;
+                text-align: center;
+            }
+        }
