@@ -189,7 +189,7 @@ header {
     list-style: none;
     margin-bottom: 30px;
     text-align: center;
-    font-size:30px;
+    font-size:25px;
 }
 
 .plan-features li {
@@ -221,7 +221,32 @@ header {
 }
 /* FOOTER*/
 footer {
-    size: 10px;
+    height: 150px;
+    background-color: #000030;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+
+}
+footer .footer-left, footer .footer-center, footer .footer-right {
+    margin-bottom: 20px;
+}
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    float:left;
+}
+.center footer {
+    float:center;
+}
+footer p {
+    margin: 5px 0;
+}
+.networks {
+    text-align: center ;
+    display: inline;
+    margin: 2%;
+    color: #1b0bf8;
 }
 
 /* Responsive Design */
