@@ -137,12 +137,10 @@ header {
     padding-top: 30px;
     width: 20%;
     float: right;
-
-
-
-
-
 }
+.center {
+    width:20% ;
+    margin: 0 auto;
 }
 
 /* Responsive Design */
